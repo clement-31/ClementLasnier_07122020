@@ -1,24 +1,25 @@
-# Projet2OCR
-Transformer une maquette en site web
+
+Projet 2 : transformer une maquette en site web
+
 
 Présentation de Reservia
 Reservia est une petite entreprise qui propose à ses usagers de trouver des hébergements et des activités dans la ville de leur choix.
 
-Eléments à disposition
+Éléments à disposition
 La maquette desktop et mobile du site.
 Les images du site avec différents formats.
 
 Contraintes
 Le site doit se faire en HTML et CSS sans frameworks.
-Les icones proviennent de Font Awesome.
+Les icônes proviennent de Font Awesome.
 Couleurs utilisées : bleu #0065FC, bleu clair #DEEBFF et gris #F2F2F2.
 Police utilisée : Raleway
 Le code utilise les balises sémantiques et ne doit contenir aucune erreur ni alerte au validateur W3C.
 Le site devra être compatible avec les dernières versions des navigateurs Chrome et Firefox.
 Les images doivent être de taille adéquate afin qu'elles impactent le moins possible le temps de chargement de la page.
-Le code doit être versionné avec git et doit avoir un repo distant sur Github ou Gitlab.
+Le code doit être versionné avec git et doit avoir un repository distant sur Github ou Gitlab.
 
-Les fonctionnalités
+Fonctionnalités
 Le champ de recherche doit être un champ de saisie.
 Chaque carte d’hébergement ou d’activité est cliquable dans son intégralité.
 Les filtres, bien que non fonctionnels, changent de style au survol.
