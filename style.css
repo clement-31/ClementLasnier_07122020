@@ -1,0 +1,83 @@
+/* Variable css */
+
+:root {
+    --main-blue: #0065FC;/* Bleu fonçé pour les chose importantes */
+    --blue-light: #DEEBFF; /* bleu clair pour contour icon filtre et la notation avec les étoiles*/
+    --bg-grey:#F2F2F2; /* gris pour les bg hebergement*/
+}
+
+/* Css général */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;   
+}
+
+h1, h2, h3{
+    font-weight: 800;
+}
+
+p, a{
+    font-weight: 500;
+}
+
+h2{
+    font-size: 1.375rem;
+}
+
+h3{
+    font-size: 1rem;
+}
+
+p{
+    font-size: 0.875rem;
+}
+
+a{
+    font-size: 1rem;
+    text-decoration: none;
+    color: black;
+}
+
+li{
+    list-style: none;
+    text-decoration: none;
+}
+
+/*Header*/
+
+header{
+    display: grid;
+    align-items: center;
+    max-width: 1440px;
+    margin: 0 auto;
+    grid-template-columns: auto 1fr auto auto;
+        grid-template-areas: "logo . navbar button";
+}
+
+.header_logo{
+    grid-area: logo;
+    height: 30px;
+    margin: 0 2rem;
+}
+
+.header_nav{
+    grid-area: navbar;
+    display: flex;
+}
+
+.header_nav_link{
+    padding: 1.9rem;  
+}
+
+.header_signup{
+    grid-area: button;
+    color: var(--main-blue);
+    font-weight: bold;
+    margin: 2rem;
+}
