@@ -320,3 +320,40 @@ header{
 .hosting_populary_card_space{
     flex: 1;
 }
+
+
+/* Sections Activités */
+
+.activity{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto 8rem 2rem 2rem 2rem 9rem;
+    column-gap: 2rem;
+    row-gap: 2rem;
+    padding: 2rem;
+}
+
+.activity_card{
+    background-color: var(--bg-grey);
+    box-shadow: 0 0px 15px rgba(0, 0, 0, .2);
+    border-radius: 1rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.activity_card_wrapping{
+    flex: 1;
+    position: relative;
+}
+
+.activity_card_wrapping_img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.activity_card_title{
+    margin: 1rem;
+}
