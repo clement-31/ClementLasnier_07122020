@@ -357,3 +357,33 @@ header{
 .activity_card_title{
     margin: 1rem;
 }
+
+
+/* Footer */
+
+.footer{
+    background-color: var(--bg-grey);
+}
+
+.footer_wrapping{
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    padding: 4rem 2rem;
+}
+
+.footer_column{
+    width: 33%;
+}
+
+.footer_column_title{
+    margin-bottom: 1rem;
+}
+
+.footer_column_link{
+    margin-bottom: 1rem;
+}
+
+.footer_column_link:nth-child(3){
+    margin-bottom: 0;
+}
