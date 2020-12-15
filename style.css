@@ -1,4 +1,4 @@
-/* Variable CSS */
+/* Caractéristiques générales Css */
 
 :root {
     --main-blue: #0065FC;/* Bleu fonçé utilisé pour les chose importantes */
@@ -49,7 +49,7 @@ li{
     text-decoration: none;
 }
 
-/*Header*/
+/* Header */
 
 header{
     display: grid;
@@ -57,7 +57,7 @@ header{
     max-width: 1440px;
     margin: 0 auto;
     grid-template-columns: auto 1fr auto auto;
-        grid-template-areas: "logo . navbar button";
+    grid-template-areas: "logo . navbar button";
 }
 
 .header_logo{
@@ -82,42 +82,9 @@ header{
     margin: 2rem;
 }
 
-/* mobile */
 
-@media screen and (max-width: 768px){
 
-    header{
-        width: 100%;
-        grid-template-columns: auto 1fr auto;
-        grid-template-areas: 
-        "logo . button"
-        "navbar navbar navbar";
-    }
-
-    .header_nav_link{
-        width: 50%;
-        text-align: center;
-        border-bottom: 3px solid var(--bg-grey);
-    }
-
-    .header_nav_link:hover{
-        color: var(--main-blue);
-        border-bottom: 3px solid var(--main-blue);
-        transition-duration: 0.1s;     
-    }
-}
-
-/* Tablet & Desktop */
-
-@media screen and (min-width: 768px){
-
-    .header_nav_link:hover{
-        color: var(--main-blue);
-        border-top: 3px solid var(--main-blue);     
-    }
-}
-
-/*Search Section*/
+/* Section Rechercher */
 
 .main{
     max-width: 1440px;
@@ -125,9 +92,8 @@ header{
     padding: 0 2rem ;
 }
 
-/*Search Section*/
 
-/*Search_Header*/
+/*Header Rechercher*/
 
 .search{
     padding: 0;
@@ -141,7 +107,8 @@ header{
     margin-bottom: 1.5rem;
 }
 
-/*Search_Form*/
+
+/* Formulaire de recherche */
 
 .search_form{
     display: flex;
@@ -175,7 +142,8 @@ header{
     display: none;
 }
 
-/*Search_Filters*/
+
+/* Filtres de recherche */
 
 .search_filters{
     display: flex;
@@ -201,8 +169,6 @@ header{
     transition: all ease 0.8s;
 }
 
-
-
 .search_filter_category_icon{
     background-color: var(--blue-light);
     display: flex;
@@ -219,7 +185,8 @@ header{
     margin: 0 1rem;
 }
 
-/*Search_info*/
+
+/* Informations recherche */
 
 .search_info{
     display: flex; 
@@ -237,8 +204,6 @@ header{
     border: 1px solid var(--bg-grey);
     margin-right: 1rem;
 }
-
-/*Search_info*/
 
 .search_info{
     display: flex; 
@@ -263,48 +228,8 @@ header{
         border: 2px solid var(--blue-light);
     }
 
-/* Mobile */
 
-@media screen and (max-width: 768px){
-    .main{
-        padding: 0;
-    }
-
-    .search{
-        padding: 2rem;
-    }
-
-    .search_header_title{
-        margin-top: 2rem;
-    }
-
-    .search_filter_title{
-        width: 100%;   
-    }
-
-    .search_form_submit_input{
-        display: none;
-    }
-
-    .search_form_submit_input_2{
-        display: block;
-        border-radius: 1rem;
-        margin-left: -1rem;
-    }
-
-}
-
-/* Tablet & Desktop */
-
-@media screen and (min-width: 768px){
-
-    .search_form_text_input{
-        font-size: 18px;
-    }
-
-}
-
-/* Hosting Section */
+/* Section Hébergements */
 
 .hosting{
     display: grid;
@@ -394,112 +319,8 @@ header{
     flex: 1;
 }
 
-/* Mobile */ 
 
-@media screen and (max-width:576px){
-    .hosting{
-        grid-template-columns: 1fr;   
-    }
-
-    .hosting_main{
-        order: 2;
-        margin: 0;
-        grid-template-columns: 1fr;
-        padding: 2rem;
-    }
-}
-
-/* Tablet */
-
-@media screen and (min-width: 576px){
-    .hosting{
-        grid-template-columns: 1fr;
-    }
-    .hosting_main{
-        grid-template-columns: repeat(2, 1fr);
-        order: 2; 
-        padding: 2rem;
-        margin: 0;
-    }
-    .hosting_main_header{
-        grid-column: 1/ span 2;
-    }
-
-
-}
-
-@media screen and (min-width: 768px){
-
-    .hosting_main{
-        grid-template-columns: repeat(3, 1fr);
-        order: 1;
-        padding: 2rem 0;
-    }
-
-    .hosting_main_header{
-        grid-column: 1/ span 3;
-    }
-
-    .hosting_populary_title{
-        grid-column: 1/ span 3;
-    }
-
-    .hosting_populary_card_img{
-        height: 10.4rem;
-    }
-
-    .hosting_populary{
-        grid-template-columns: repeat(3, 1fr);
-        column-gap: 2rem;
-        border-radius: 1.5rem;
-        margin-top: 2rem;
-    }
-}
-
-/* Desktop */
-
-@media screen and (min-width: 960px){
-    .hosting{
-        grid-template-columns: 2fr 1fr;
-    }
-    .hosting_main{
-        background-color: var(--bg-grey);
-        order: 0;
-        padding: 2rem;
-        margin: 2rem 0;
-    }
-
-    .hosting_main_header{
-        grid-column: 1/ span 3;
-    }
-
-    .hosting_main_card:hover {
-        transform: scale(1.02);
-        transition-duration: .3s;
-    }
-
-    .hosting_populary_title{
-        grid-column: 1;
-    }
-
-    .hosting_populary{
-        grid-template-columns: 1fr;
-        margin: 2rem 0;
-    }
-
-    .hosting_populary_card_img{
-        height: 9rem;
-    }
-
-    .hosting_main_card:hover {
-        transform: scale(1.02);
-        transition-duration: .3s;
-    }
-}
-
-
-
-/* Activity Section */
+/* Section Activités */
 
 .activity{
     display: grid;
@@ -535,95 +356,7 @@ header{
     margin: 1rem;
 }
 
-/* Mobile */
 
-@media screen and (max-width: 576px){
-    .activity{
-        grid-template-columns: 1fr;
-        grid-template-rows: auto 12rem 12rem 12rem 12rem 12rem 12rem;
-        
-        margin: 0;
-    }
-    .activity_title{
-        grid-column: 1/2;
-    }
-}
-
-@media screen and (min-width: 576px){
-    .activity{
-        grid-template-columns: repeat(2,1fr);
-        grid-template-rows: auto 12rem 12rem 12rem;
-    }
-    .activity_title{
-        grid-column: 1/3;
-    }
-}
-
-/* Tablet */
-
-@media screen and (min-width: 768px){
-    .activity{
-        grid-template-columns: repeat(3,1fr);
-        grid-template-rows: auto 12rem 12rem;
-        padding: 2rem 0;
-    }
-
-    .activity_title{
-        grid-column: 1/4;
-    }
-}
-
-/* Desktop */
-
-@media screen and (min-width: 960px){
-
-    .activity{
-        grid-template-columns: repeat(4,1fr);
-        grid-template-rows: auto 8rem 2rem 2rem 2rem 9rem;
-    }
-
-    .activity_title{
-        grid-column: 1/5;
-    }
-
-    .activity_card_1{
-        grid-row: 2/7 ;
-        grid-column: 1/2;
-    }
-    
-    .activity_card_2{
-        grid-row: 2/6 ;
-        grid-column: 2/3;
-    }
-
-    .activity_card_3{
-        grid-row: 2/7 ;
-        grid-column: 3/4;
-    }
-
-    .activity_card_4{
-        grid-row: 2/4 ;
-        grid-column: 4/5;
-    }
-
-    .activity_card_5{
-        grid-row: 6/7 ;
-        grid-column: 2/3;
-    }
-
-    .activity_card_6{
-        grid-row: 4/7 ;
-        grid-column: 4/5;
-    }
-
-    .activity_card:hover {
-        transform: scale(1.02);
-        transition-duration: .3s;
-    }
-
-}
-
-/* Fin Activity Section */
 
 /* Footer */
 
@@ -654,30 +387,44 @@ header{
     margin-bottom: 0;
 }
 
-/* Mobile */
+
+
+/* Partie Responsive */
+
+
+ /* Header mobile */
 
 @media screen and (max-width: 768px){
-    .footer_wrapping{
-        flex-direction: column;
-        padding: 2rem 2rem;
-    }
 
-    .footer_column{
-        margin-bottom: 3rem;
+    header{
         width: 100%;
+        grid-template-columns: auto 1fr auto;
+        grid-template-areas: 
+        "logo . button"
+        "navbar navbar navbar";
     }
 
-    .footer_column:nth-child(3){
-        margin-bottom: 0;
+    .header_nav_link{
+        width: 50%;
+        text-align: center;
+        border-bottom: 3px solid var(--bg-grey);
     }
-}
 
-@media screen and (min-width: 992px){
-    .footer_column_link a:hover{
+    .header_nav_link:hover{
         color: var(--main-blue);
         border-bottom: 3px solid var(--main-blue);
-        transition-duration: 0.1s;
+        transition-duration: 0.1s;     
     }
 }
 
-/* Fin Footer */
+
+/* Header tablette et desktop */
+
+@media screen and (min-width: 768px){
+
+    .header_nav_link:hover{
+        color: var(--main-blue);
+        border-top: 3px solid var(--main-blue);     
+    }
+}
+
