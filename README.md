@@ -5,10 +5,9 @@ Présentation de Reservia
 
 Reservia est une petite entreprise qui propose à ses usagers de trouver des hébergements et des activités dans la ville de leur choix.
 
-Éléments à disposition
-La maquette desktop et mobile du site.
-Les images du site avec différents formats.
-
+Éléments à disposition : 
+- la maquette desktop et mobile du site.
+- les images du site avec différents formats.
 
 
 Contraintes
