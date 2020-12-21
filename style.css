@@ -84,13 +84,13 @@ header{
 
 .header_nav_link:hover{
         color: var(--main-blue);
-        border-bottom: 3px solid var(--main-blue);
+        border-top: 3px solid var(--main-blue);
         transition-duration: 0.1s;     
     }
 
 .header_signup:hover{
         color: var(--main-blue);
-        border-bottom: 3px solid var(--main-blue);
+        border-top: 3px solid var(--main-blue);
         transition-duration: 0.1s; 
 }
 
