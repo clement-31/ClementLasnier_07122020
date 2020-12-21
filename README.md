@@ -1,4 +1,4 @@
-﻿Projet 2 : transformer une maquette en site web
+﻿**Projet 2 : transformer une maquette en site web**
 
 
 **Présentation de Reservia**
