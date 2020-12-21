@@ -1,9 +1,7 @@
-/* Caractéristiques générales Css */
-
 :root {
-    --main-blue: #0065FC;/* Bleu fonçé utilisé pour les chose importantes */
-    --blue-light: #DEEBFF; /* bleu clair utiliser pour contour icon filtre et les étoiles*/
-    --bg-grey:#F2F2F2; /* gris utilisé pour les bg hebergement*/
+    --main-blue: #0065FC;/* Bleu fonçé pour les chose importantes */
+    --blue-light: #DEEBFF; /* Bleu clair pour contours icon filtre et les étoiles*/
+    --bg-grey:#F2F2F2; /* Gris utilisé les bg hebergement*/
 }
 
 /* Css Général */
@@ -49,7 +47,7 @@ li{
     text-decoration: none;
 }
 
-/* Header */
+/*Header*/
 
 header{
     display: grid;
@@ -57,7 +55,7 @@ header{
     max-width: 1440px;
     margin: 0 auto;
     grid-template-columns: auto 1fr auto auto;
-    grid-template-areas: "logo . navbar button";
+        grid-template-areas: "logo.navbar button";
 }
 
 .header_logo{
@@ -91,10 +89,11 @@ header{
 .header_signup:hover{
         color: var(--main-blue);
         border-top: 3px solid var(--main-blue);
-        transition-duration: 0.1s; 
-}
+        transition-duration: 0.1s;
+    }
 
-/* Section Rechercher */
+
+/* Section Recherche */
 
 .main{
     max-width: 1440px;
@@ -103,7 +102,8 @@ header{
 }
 
 
-/* Header Rechercher*/
+
+/* Header Recherche */
 
 .search{
     padding: 0;
@@ -196,24 +196,7 @@ header{
 }
 
 
-/* Informations Recherche */
-
-.search_info{
-    display: flex; 
-    align-items: center;
-}
-
-.search_info_icon{
-    color: var(--main-blue);
-    min-height: 2rem;
-    min-width: 2rem;
-    border-radius: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid var(--bg-grey);
-    margin-right: 1rem;
-}
+/* Infos recherche */
 
 .search_info{
     display: flex; 
@@ -398,10 +381,10 @@ header{
 
 
 
+
 /* Partie Responsive */
 
-
- /* Header Mobile */
+/* Header Mobile */
 
 @media screen and (max-width: 768px){
 
@@ -409,7 +392,7 @@ header{
         width: 100%;
         grid-template-columns: auto 1fr auto;
         grid-template-areas: 
-        "logo . button"
+        "logo.button"
         "navbar navbar navbar";
     }
 
@@ -418,10 +401,10 @@ header{
         text-align: center;
         border-bottom: 3px solid var(--bg-grey);
     }
+}
 
 
-
-/* Section Information Recherche Mobile */
+/* Section Recherche Mobile */
 
 @media screen and (max-width: 768px){
     .main{
@@ -449,17 +432,15 @@ header{
         border-radius: 1rem;
         margin-left: -1rem;
     }
-
 }
 
-/* Section Information Recherche Tablette et Desktop */
+/* Section Recherche Tablette et Desktop */
 
 @media screen and (min-width: 768px){
 
     .search_form_text_input{
         font-size: 18px;
     }
-
 }
 
 
@@ -525,7 +506,6 @@ header{
     }
 }
 
-
 /* Section Hébergements Desktop */
 
 @media screen and (min-width: 960px){
@@ -545,7 +525,7 @@ header{
 
     .hosting_main_card:hover {
         transform: scale(1.02);
-        transition-duration: .3s;
+        transition-duration: 0.3s;
     }
 
     .hosting_populary_title{
@@ -563,7 +543,7 @@ header{
 
     .hosting_main_card:hover {
         transform: scale(1.02);
-        transition-duration: .3s;
+        transition-duration: 0.3s;
     }
 }
 
@@ -651,9 +631,8 @@ header{
 
     .activity_card:hover {
         transform: scale(1.02);
-        transition-duration: .3s;
+        transition-duration: 0.3s;
     }
-
 }
 
 
@@ -675,12 +654,3 @@ header{
     }
 }
 
- /* Footer desktop et tablette */
-
- @media screen and (min-width: 992px){
-    .footer_column_link a:hover{
-        color: var(--main-blue);
-        border-bottom: 3px solid var(--main-blue);
-        transition-duration: 0.1s;
-    }
-}
