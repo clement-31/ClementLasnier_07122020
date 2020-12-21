@@ -1,7 +1,7 @@
 ﻿Projet 2 : transformer une maquette en site web
 
 
-Présentation de Reservia
+**Présentation de Reservia**
 
 Reservia est une petite entreprise qui propose à ses usagers de trouver des hébergements et des activités dans la ville de leur choix.
 
