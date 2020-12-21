@@ -682,10 +682,3 @@ header{
     }
 }
 
-@media screen and (min-width: 992px){
-    .footer_column_link a:hover{
-        color: var(--main-blue);
-        border-bottom: 3px solid var(--main-blue);
-        transition-duration: 0.1s;
-    }
-}
