@@ -87,12 +87,16 @@ header{
     padding: 2rem;
 }
 
-.header_nav_link:hover, .header_signup:hover{
-        color: var(--main-blue);
-        border-top: 3px solid var(--main-blue);
-        transition-duration: 0.1s;     
+.header_nav_link:hover{
+    color: var(--main-blue);
+    transition-duration: 0.1s; 
+    border-top: 3px solid var(--main-blue);    
     }
 
+.header_signup:hover{
+   border-top: 3px solid transparent;
+   transition-duration: 0.1s
+}
 
 
 
@@ -268,6 +272,7 @@ header{
 .hostingMainHeader {
   grid-column: 1/-1;
 }
+
 .hostingMainCard {
   background-color: white;
   padding: 0.375rem;
@@ -365,12 +370,14 @@ header{
 .activityTitle {
   grid-column: 1/-1;
 }
+
 .activityCard {
-  box-shadow: 0 0 20px #0000002e;
+  box-shadow: 0 0 20px rgba(0 0 0 0.2);
   border-radius: 1rem;
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  background-color: var(--bg-grey);
   transition-duration: 0.1s;
 }
 .activityCard:hover {
@@ -387,7 +394,7 @@ header{
   object-fit: cover;
 }
 .activityCardTitle {
-  margin: 1.2rem 1.5rem;
+  margin: 1rem;
 }
 
 
@@ -565,7 +572,7 @@ header{
 
 /* Activités */
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1024px) {
   .activity {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto 14rem 2rem 2rem 2rem 14rem;
@@ -595,14 +602,14 @@ header{
     grid-row: 4/7;
   }
 }
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1024px) {
   .activity {
     row-gap: 2rem;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto 12rem 12rem;
   }
 }
-@media screen and (max-width: 925px) {
+@media screen and (max-width: 768px) {
   .activity {
     row-gap: 2rem;
     grid-template-columns: repeat(2, 1fr);
@@ -614,8 +621,11 @@ header{
     row-gap: 2rem;
     grid-template-columns: 1fr;
     grid-template-rows: auto 12rem 12rem 12rem 12rem 12rem 12rem;
+    margin: 0;
   }
 }
+
+
 
 /* Footer Mobile */ 
 
